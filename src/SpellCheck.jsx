@@ -41,7 +41,7 @@ const SpellCheck = () => {
                 rows={5}
                 cols={40}
             />
-            <p>Did you mean: <strong>{suggestedText}</strong>?</p>
+            {suggestedText && <p>Did you mean: <strong>{suggestedText}</strong>?</p>}
         </div>
     );
 };
